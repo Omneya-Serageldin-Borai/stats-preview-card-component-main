@@ -45,7 +45,7 @@ h3 , p {
     line-height: 1.8;
 }
 .text h3 {
-    font-size: 23px;
+    font-size: 28px;
 }
 .text h3 span {
     color: hsl(277, 64%, 61%);
@@ -58,7 +58,7 @@ h3 , p {
 }
 .text p , .text p span {
     color: hsla(0, 0%, 100%, 0.75);
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 100;
 }
 .img , .img img {
