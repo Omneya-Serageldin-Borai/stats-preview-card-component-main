@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "lexend deca" , sans-serif;
+    background: hsl(233, 47%, 7%);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 150px;
+    padding-left: 150px;
+    text-align: center;
+}
+h3 , p {
+    margin: 0;
+    padding: 0;
+}
+.main {
+    display: flex;
+}
+.text div {
+    display: flex;
+    justify-content: space-between;
+}
+.text , .img {
+    flex: 300px;
+}
+.text {
+    background: hsl(244, 38%, 16%);
+    text-align: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 40px 70px 40px 40px;
+    box-sizing: border-box;
+}
+.img {
+    position: relative;
+}
+.text > p {
+    margin: 25px 0 50px 0;
+    line-height: 1.8;
+}
+.text h3 {
+    font-size: 23px;
+}
+.text h3 span {
+    color: hsl(277, 64%, 61%);
+}
+.text div p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.text p , .text p span {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 10px;
+    font-weight: 100;
+}
+.img , .img img {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.img img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+.img::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #7b1fa287;
+    opacity: .8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media (max-width:375px){
+    body {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .main {
+        flex-direction: column-reverse;
+    }
+    .text {
+        flex: 5;
+    }
+    .img {
+        flex: 1;
+    }
+    .text {
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 5px;
+        padding: 20px;
+        text-align: center;
+    }
+    .text div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .img , .img img {
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+    }
+    .text > p {
+        margin:  10px 0 10px 0;
+        line-height: 1.6;
+    }
+    .text div p{
+        margin-top: 20px;
+    }
+    .img::after {
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 0px;
+    }
+}
