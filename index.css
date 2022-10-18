@@ -45,14 +45,14 @@ h3 , p {
     line-height: 1.8;
 }
 .text h3 {
-    font-size: 28px;
+    font-size: 30px;
 }
 .text h3 span {
     color: hsl(277, 64%, 61%);
 }
 .text div p {
     color: #fff;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     text-transform: capitalize;
 }
