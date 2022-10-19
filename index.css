@@ -30,7 +30,7 @@ h3 , p {
 }
 .text , .img {
     flex: 200px;
-    max-width: 450px;
+    max-width: 400px;
 }
 .text {
     background: hsl(244, 38%, 16%);
